@@ -278,7 +278,24 @@ h3 {
   backdrop-filter: blur(14px);
 }
 
-.stat-card span {
+.stat-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(223, 24, 38, 0.12), rgba(215, 130, 44, 0.14));
+  color: var(--brand);
+}
+
+.stat-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.stat-card > span:not(.stat-icon) {
   display: block;
   color: var(--text-soft);
   font-size: 0.9rem;
